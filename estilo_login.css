@@ -1,0 +1,194 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+button {
+  cursor: pointer;
+}
+
+button, input {
+  border: none;
+  outline: none;
+}
+
+.login-section {
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(./imagens/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.logo-outer-container {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  justify-content: space-between;
+  width: 45%;
+  height: 100%;
+  max-width: 900px;
+}
+
+.logo-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: fit-content;
+  margin-top: 20vh;
+  padding-left: 15%;
+}
+
+.logo-text {
+  font-size: 2.4rem;
+  color: #cdccd0;
+  line-height: 2.4rem;
+}
+
+.logo-text.bold {
+  font-weight: 700;
+  text-decoration: underline;
+  padding-left: 0%;
+}
+
+.logo-bonequin {
+  align-self: flex-start;
+  width: 50%;
+}
+
+.login-outer-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  align-self: flex-end;
+  width: 38%;
+  max-width: 700px;
+  justify-content: center;
+  margin-right: 5%;
+}
+
+.login-container {
+  display: block;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  align-self: flex-end;
+  width: 100%;
+  padding: 67px 32px;
+  background-color: #dedee2;
+  border-radius: 40px;
+}
+
+.login-sso-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 45px;
+  width: 100%;
+}
+
+.login-button {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  font-size: 1.6rem;
+  padding: 26px 28px;
+  border-radius: 4px;
+  color: #fff;
+}
+
+.login-button.red {
+  background-color: #d7503f;
+}
+
+.login-button.black {
+  background-color: #111;
+  transition: background 0.2s ease;
+}
+
+.login-remember-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.login-remember-checkbox {
+  height: 26px;
+  width: 26px;
+}
+
+.login-remember-label {
+  font-size: 1.4rem;
+}
+
+#formularioLogin {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  gap: 20px;
+  margin-top: 20px;
+}
+
+#formularioLogin label {
+  font-size: 1.6rem;
+  color: #000;
+}
+
+#formularioLogin input {
+  border: 2px solid #dedee2;
+  border-radius: 10px;
+  width: 100%;
+  padding: 20px;
+  font-size: 1.6rem;
+}
+
+#formularioLogin button {
+  font-size: 1.6rem;
+  padding: 20px;
+  background-color: #111;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+#formularioLogin button:hover {
+  background-color: #B6C8A9;
+}
+
+.login-create-account-container {
+  display: flex;
+  font-size: 1.6rem;
+  margin-top: 36px;
+  color: #11111399;
+}
+
+.login-create-account-link {
+  color: #000000;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.login-create-account-link:hover {
+  color: #B6C8A9;
+}
+#formularioLogin input[type="email"] {
+  border: 2px solid #dedee2;
+  border-radius: 10px;
+  width: 100%;
+  padding: 20px;
+  font-size: 1.6rem;
+}
+
+#formularioLogin input[type="email"] {
+  width: 100%;
+}

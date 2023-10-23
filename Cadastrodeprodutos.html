@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Produtos</title>
+    <link rel="stylesheet" type="text/css" href="cadastrodeprodutos.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f3f3;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            background-color: #324A5F;
+            color: #fff;
+            padding: 20px;
+            margin-top: 0px;;
+        }
+
+        #formularioCadastro {
+            background-color: #fff;
+            padding: 50px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+        }
+
+        label {
+            display: block;
+            text-align: left;
+            margin-top: 10px;
+        }
+
+        input, textarea, select {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #324A5F;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Cadastro de Produtos</h1>
+    <form id="formularioCadastro" action="conexaoprodutos.php" method="POST" enctype="multipart/form-data">
+        <input type="hidden" name="UserID" value="<?php echo $_SESSION['UserID']; ?>">
+        <label for="nome">Nome do Produto:</label>
+        <input type="text" id="nome" name="nome" required>
+        <br>
+        <label for="descricao">Descrição:</label>
+        <textarea id="descricao" name="descricao" rows="4" required></textarea>
+        <br>
+        <label for="preco">Preço:</label>
+        <input type="text" id="preco" name="preco" required>
+        <br>
+        <label for="categoria">Categoria:</label>
+        <select id="categoria" name="categoria" required>
+            <option value="Eletrônicos">Eletrônicos</option>
+            <option value="Roupas">Roupas</option>
+            <option value="Alimentos">Alimentos</option>
+            <option value="Veiculos">Veiculos</option>
+        </select>
+        <br>
+        <label for="imagem">Imagem do Produto:</label>
+        <input type="file" id="imagem" name="imagem" accept="image/*" required>
+        <br>
+        <button type="submit">Cadastrar Produto</button>
+    </form>
+</body>
+</html>

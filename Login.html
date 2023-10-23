@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="estilo_login.css">
+    
+  </head>
+  <body>
+   
+    <section class="login-section">
+      <div class="logo-outer-container">
+        <div class="logo-container">
+          <div class="logo">
+            <img src="./imagens/logo.png" alt="Venda já" />
+          </div>
+          <p class="logo-text normal">
+            O melhor site de compra e venda do brasil!
+          </p>
+          <p class="logo-text bold">
+            Rápido, fácil e seguro, crie já a sua conta.
+          </p>
+        </div>
+
+        <img class="logo-bonequin" src="./imagens/asset 1.png" alt="Bonequin" />
+      </div>
+
+      <div class="login-outer-container">
+        <div class="login-container">
+          <div class="login-sso-container">
+            <button class="login-button red">
+              <img src="./imagens/Google.png" alt="Google icon" />
+              <p>Continuar com o Google</p>
+            </button>
+            <br />
+            <button class="login-button black">
+              <img src="./imagens/Apple.svg" alt="Google icon" />
+              <p>Continuar com a Apple</p>
+            </button>
+          </div>
+
+          <form id="formularioLogin" action="conexao_login.php" method="POST">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" required>
+            <button type="submit">Entrar</button>
+        </form>
+          <div class="login-create-account-container">
+            <span>Não possui conta?</span>&nbsp;
+            <a class="login-create-account-link" href="cadastro.php">Criar conta</a>
+          </div>
+        </div>
+      </div>
+
+
+    </section>
+
+  </body>
+</html>
